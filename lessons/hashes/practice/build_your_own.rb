@@ -1,7 +1,19 @@
 # Your turn to create a hash. Make sure to use symbols for the keys.
 
 # Create your hash here
+new_band = {}
+new_band[:bassist] = "Reed"
+p new_band[:bassist]
+p new_band[:vocalist]
+new_band[:vocalist] = "Lane"
+new_band[:drummer] = "Blake"
+p new_band.keys
+p new_band.values
+new_band[:vocalist] = "Abdul"
+p new_band.keys
 
+
+p new_band
 # Steps
 # 1. Create a hash called new_band.
 # 2. Add a bassist to your new_band hash.

@@ -5,23 +5,28 @@
 def capitalize
     names = ["alice", "bob", "charlie"]
 
-    # Your code goes here
-
+    names.map do |name|
+        name.capitalize
+    end
+    
     # expected return value is ["Alice", "Bob", "Charlie"]
 end
 
 def doubles
     numbers = [1, 2, 3, 4, 5]
 
-    # Your code goes here
-
+    numbers.map do |num|
+        num * 2
+    end
     # expected return value is [2, 4, 6, 8, 10]
 end
 
 def squares
     numbers = [1, 2, 3, 4, 5]
 
-    # Your code goes here
+    numbers.map do |num|
+        num * num
+    end
 
     # expected return value is [1, 4, 9, 16, 25]
 end
@@ -37,7 +42,12 @@ end
 def normalize_zip_codes
     numbers = [234, 10, 9119, 38881]
 
-    # Your code goes here
+    numbers.map do |number|
+        until number.length == 5
+            number.something
+
+        end
+    end
 
     # expected return value is ["00234", "00010", "09119", "38881"]
 end
@@ -67,9 +77,9 @@ def trim_last_letter
 end
 
 
-# p capitalize
-# p doubles
-# p squares
+p capitalize
+p doubles
+p squares
 # p lengths
 # p normalize_zip_codes
 # p backwards
